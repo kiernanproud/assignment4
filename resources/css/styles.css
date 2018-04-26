@@ -9,7 +9,7 @@ html {
 
 a {
     color: #000000;
-    font-size: 1.7em;
+    font-size: 1.0em;
     transition: background-color .5s, color .5s;
     text-decoration: underline;
     text-transform: none; 
@@ -20,7 +20,7 @@ a:hover {
 }
 
 body {
-    background-image: url(img/kiernan-background.jpg);
+    background-image: url(img/kiernan-background.png);
     background-size: cover;
 /*    background-position: center;*/
     display: flex;
@@ -33,11 +33,16 @@ form p {
     margin-bottom: 1em;
 }
 
+form select {
+    text-align: center
+}
+
+
 form label {
     flex-basis: 33%;
 }
 
-form input, textarea {
+form input, textarea, select {
     flex: 1;
     margin: 0 1em;
     border-radius: 5px;
@@ -45,6 +50,10 @@ form input, textarea {
 
 form-button {
     margin-right: 1em;
+}
+
+.radio-buttons {
+    margin-right: 15px
 }
 
 h1 {
@@ -71,7 +80,13 @@ h4 {
 header {
     display: flex;
     align-items: center;
+    color: #000000;
+    font-size: 1.7em;
+    transition: background-color .5s, color .5s;
+    text-decoration: underline;
+    text-transform: none; 
 }
+
 
 header nav {
     flex: 2;
@@ -89,6 +104,7 @@ header nav li {
     margin-right: 20px
 }
 
+
 .line {
     display: block;
     margin-right: 380px;
@@ -105,22 +121,33 @@ main {
     display: flex;
     align-items: center;
     flex: 1;
+    justify-content: center
 }
 
 .main-text {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 5;
 }
 
+/*
+.main-text1 {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-left: 100px;
+    margin-right: 120px;
+}
+*/
 
 .quote {
     background-image: linear-gradient(rgba(210,210,210,.85), rgba(210,210,210,.85));
     color: #ffffff;
     text-align: center;
-    margin: 0px;
     flex: 4;
+    padding: 10px
 }
 
 .quote2 {
@@ -137,7 +164,10 @@ main {
     margin-bottom: 27px;
     margin-right: 15px;
     flex: 4;
-    flex-direction: column
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 100px;
+    
 }
 
 footer {
@@ -145,6 +175,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #000000;
+    font-size: 1.7em;
+    transition: background-color .5s, color .5s;
+    text-decoration: underline;
+    text-transform: none; 
 }
 
 footer nav ul {
@@ -158,9 +193,14 @@ footer nav li {
 }
 
 @media screen and (max-width: 30rem) {
-    header, 
-    main, 
-    footer {
+    header,
+    header nav ul, 
+    main,
+    footer,
+    form p {
         flex-direction: column;
-    }    
+    }  
+    h1, h2, h3 {
+        font-size: 80%     
+    }
 }

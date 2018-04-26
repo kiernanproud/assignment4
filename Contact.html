@@ -21,37 +21,61 @@
             </ul>
         </nav>
     </header>
-<main>
+    <main>
         <form>
-            <h1>Let's Talk </h1>
-            <h2>Reach out below. </h2>
-            <br><hr><br><br>
+            <div class="main-text1">
+                <h1>Let's Talk </h1>
+                <h2>Reach out below </h2>
+                <br><hr><br><br>
 
-            <p>
-                <label for="car-color">Car Color</label>
-                <input type="text" name="car-color" id="car-color">
-            </p>
+                <p>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name">
+                </p>
 
-            <p>
-                <label for="car-model">Car Model</label>
-                <input type="text" name="car-model" id="car-model">
-            </p>
+                <p>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name">
+                </p>
 
-            <p>
-                <label for="car-range">Car Range</label>
-                <input type="text" name="car-range" id="car-range">
-            </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                
+                <p>
+                    <label for="subject">Reason for Contact:</label>
+                    <select name="subject" id="subject" multiple="true">
+                        <option value="Employment">Employment Opportunities</option>
+                        <option value="Freelance-Content">Freelance Content</option>
+                        <option value="Informational-Assignment">Informational Interview</option>
+                        <option value="Marketing-Advice">Marketing Advice</option>
+                        <option value="General-Inquiries">General Inquiries</option>
+                    </select>       
+                </p>
 
-            <br>
+                <p>
+                   <label for="your-message">Your Message:</label><textarea name="your-message" id="your-message"></textarea>
+                </p>
+                
+                <div class="radio-buttons">
+                    <label for="current-student"> Are you currently a college student?</label>
+                    <input type="radio" name="current-student" value="Yes">Yes
+                    <input type="radio" name="current-student" value="No">No                
+                
+                </div>
 
-            <p>
-                <label></label>
-                <input class="form-button" type="submit" value="Submit">
-                <input class="form-button" type="reset" value="Reset">
-            </p>
+                <br>
+
+                <p>
+                    <label></label>
+                    <input class="form-button" type="submit" value="Submit">
+                    <input class="form-button" type="reset" value="Reset">
+                </p>
+            </div>
 
         </form>
-</main> 
+    </main>
 
     <footer>
         <nav>
